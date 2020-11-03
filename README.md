@@ -14,7 +14,7 @@
 
 ### Pages
 
-- 파일 이름 + Pages 붙이기 ex) 메인페이지를 만들 때 MainPages.js
+- 파일 이름 + Page 붙이기 ex) 메인페이지를 만들 때 MainPage.js
 - Pages는 그 페이지의 토대일뿐, Pages에 html 하드코딩 하지않기
 - Container + Components = Pages , 즉 Pages 안에는 Component or Container 파일 import 하기
 - Page폼 또는 템플릿은 Component에 작성해서 import하기, ex) MainPages면 MainTemplate.js는 Components의 main 폴더 안에 작성
