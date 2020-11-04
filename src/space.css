@@ -1,0 +1,50 @@
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+button {
+  background: rgba(48, 57, 96, 1);
+  padding: 6px 12px 6px 12px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  border: solid 0;
+  font-size: 17px;
+  margin: 17px;
+}
+
+.header {
+  margin: 56px 113px 0 65px;
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  animation-name: index;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+@keyframes index {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(700px);
+  }
+}
+
+h1 {
+  margin: 9% 0 0 18%;
+  line-height: 53px;
+  font-size: 40px;
+}
+
+span {
+  font-weight: 400;
+  line-height: 100px;
+  color: rgba(48, 57, 96, 1);
+  font-size: 60px;
+  font-family: 'Righteous', cursive;
+}
