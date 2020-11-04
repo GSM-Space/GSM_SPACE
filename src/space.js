@@ -12,11 +12,10 @@ function space() {
         <button>로그인</button>
       </div>
       <div className="main">
-        <h1>“ 학교생활을 하면서 불편한 점은 <br />
-          <span>GSM SPACE</span>로 청원해주세요 ! ” </h1>
+        <div className="h1">“ 학교생활을 하면서 불편한 점은 <br />
+          <span>GSM SPACE</span>로 청원해주세요 ! ” </div>
       </div>
-      <div className="index_img">
-      </div>
+      <img className="index_img" src={indexImg} alt="바탕이미지"></img>
     </Fragment>
   )
 }

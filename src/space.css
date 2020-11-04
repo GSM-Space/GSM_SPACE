@@ -18,21 +18,16 @@ button {
 html,
 body,
 #root {
-  height: 100%;
+  height: 100vh;
+  width: 100%;
+}
+#root {
+  height: 100vh;
   width: 100%;
 }
 
-.index_img {
-  height: 70%;
-  width: 110%;
-  background-size: cover;
-  background-position: right;
-  background-image: url(./Asset/index-img.png);
-}
-
 .header {
-  margin: 56px 113px 0 65px;
-  margin-top: 56px;
+  padding: 56px 113px 0 65px;
   display: flex;
   justify-content: space-between;
 }
@@ -43,16 +38,21 @@ body,
   animation-direction: reverse;
 }
 
+.index_img {
+  width: 100vw;
+  height: 26.51vmax;
+}
+
 @keyframes index {
   from {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(700px);
+    transform: translateY(57vh);
   }
 }
 
-h1 {
+.h1 {
   margin: 9% 0 0 18%;
   line-height: 53px;
   font-size: 40px;
