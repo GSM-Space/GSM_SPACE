@@ -13,6 +13,21 @@ button {
   margin: 17px;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.index {
+  height: 70%;
+  width: 100%;
+  background-size: cover;
+  background-position: right;
+  background-image: url(./Asset/index-img.png);
+}
+
 .header {
   margin: 56px 113px 0 65px;
   margin-top: 56px;
