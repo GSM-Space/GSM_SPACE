@@ -15,7 +15,7 @@ function space() {
         <h1>“ 학교생활을 하면서 불편한 점은 <br />
           <span>GSM SPACE</span>로 청원해주세요 ! ” </h1>
       </div>
-      <div className="index">
+      <div className="index_img">
       </div>
     </Fragment>
   )
