@@ -1,0 +1,110 @@
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.article {
+  width: 460px;
+  height: 834px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+img {
+  margin-left: 40px;
+}
+
+.section {
+  margin-left: 40px;
+  margin-bottom: 39px;
+  width: 396px;
+  height: 220px;
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.GSM {
+  font-weight: 400;
+  line-height: 90px;
+  color: rgba(48, 57, 96, 1);
+  font-size: 35px;
+  font-family: 'Righteous', cursive;
+}
+
+.h1 {
+  width: 405px;
+  height: 106px;
+  font-weight: bold;
+  padding: 39px 28px 0 27px;
+  font-size: 25px;
+}
+
+.section_h1 {
+  padding: 24px 0 0 26px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.all_petitions {
+  font-family: 'Roboto Slab', serif;
+  padding: 0 0 0 141px;
+  font-weight: bold;
+  color: #6372a8;
+  font-size: 50px;
+}
+
+.gray_box div {
+  padding: 13px 20px 13px 20px;
+}
+
+.unit {
+  margin-bottom: 17px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.gray-fir-ch {
+  font-family: 'Roboto Slab', serif;
+  padding-left: 15px;
+  color: #ffb61d;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.gray-sec-ch {
+  font-family: 'Roboto Slab', serif;
+  padding-left: 15px;
+  color: #a0c1ff;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.gray_box div {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.gray_box {
+  margin: 0 21px 23px 21px;
+  display: flex;
+  justify-content: space-around;
+  width: 355px;
+  height: 60px;
+  background: rgba(48, 57, 96, 0.59);
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  margin-left: 40px;
+  border: solid 0;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 13px 140px 13px 140px;
+  background: #ffb61d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+}
