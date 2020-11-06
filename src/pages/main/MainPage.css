@@ -1,26 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-button {
-  background: rgba(48, 57, 96, 1);
-  width: 110px;
-  height: 55px;
-  outline: 0;
-  border: 0;
-  border-radius: 20px;
-  cursor: pointer;
-
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-}
-.header {
-  padding: 56px 113px 0 65px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.main {
+.main-title--wrapper {
   animation-name: fadeIn, move;
   animation-duration: 2s;
 }
@@ -34,29 +14,21 @@ button {
   to { transform: translateY(0px); }
 }
 
-.Background {
-  width: 100%;
-  height: 100%;
-}
-
-.index_img {
-  position: fixed;
-  width: 100%;
-  height: 60.6%;
-}
-
-
-.h1 {
+.main-title {
   margin-top: 5%;
   margin-left: 18%;
   font-size: 40px;
   font-weight: bold;
 }
 
-span {
+.gsm-space {
   font-weight: 400;
   line-height: 100px;
   color: rgba(48, 57, 96, 1);
   font-size: 60px;
   font-family: 'Righteous', cursive;
+}
+.hi {
+  position: absolute;
+  bottom: 200;
 }
