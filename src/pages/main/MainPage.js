@@ -1,8 +1,8 @@
 import React from "react";
-import MainTemplate from "../../components/main/MainTemplate";
+import MainTemplate from 'components/main/MainTemplate';
 import "./MainPage.css";
 
-function MainPage() {
+const MainPage = () => {
   return (
     <>
       <MainTemplate/>

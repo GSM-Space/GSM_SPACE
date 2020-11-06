@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { Petition, Main } from './pages';
+import { Petition, Main } from 'pages';
 
 const Router = () => {
     return (
