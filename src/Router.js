@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 import { Petition, Main } from 'pages';
 
 const Router = () => {
-    return (
+    return(
         <>
             <Route exact path="/" component={Main} />
             <Route path="/petition/:state" component={Petition} />
