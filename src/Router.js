@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { Petition } from './pages';
+import { Petition, Main } from 'pages';
 
 const Router = () => {
     return(
         <>
-        <Route exact path="/" component={() => <div>메인 페이지입니다.</div>}/>
-        <Route path="/petition/:state" component={Petition}/>
+            <Route exact path="/" component={Main} />
+            <Route path="/petition/:state" component={Petition} />
         </>
     );
 }

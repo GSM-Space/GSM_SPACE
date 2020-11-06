@@ -1,0 +1,31 @@
+.Background {
+    width: 100%;
+    height: 100%;
+  }
+
+.main-header {
+    padding: 56px 113px 0 65px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.index_img {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60.6%;
+  }
+
+.login-button {
+    background: rgba(48, 57, 96, 1);
+    width: 110px;
+    height: 55px;
+    outline: 0;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+  
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
