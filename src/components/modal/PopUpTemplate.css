@@ -23,22 +23,68 @@
   .modal_title {
       font-weight: bold;
       font-size: 20px;
-      margin: 25px;
+      margin-top: 20px;
+      margin-bottom: 3rem;
   }
-  .Email-input {
+  .input-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 400px;
-    height: 30px;
+    height: 35px;
     background: #FFFFFF;
     border: 1px solid #303960;
     border-radius: 20px;
-    margin: 15px;
+    margin-bottom: 30px;
+  }
+  .email-input {
+    width: 350px;
+    border: 0;
+    padding-left: 8px;
+    font-weight: 100;
+    font-size: 15px;
+  }
+  .email-input::placeholder {
+    color: #A6A6A6;
   }
   .Google-login {
     width: 400px;
-    height: 30px;
-    background: #FFFFFF;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    color: #303960;
+    font-weight: bold;
+    font-size: 14px;
     border: 1px solid #303960;
     border-radius: 20px;
-    text-align: center;
-    margin: 15px;
+    margin-top: 20px;
+  }
+  .modal_footer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2px;
+    margin-top: 7.4%;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .forgot_password {
+    color: #303960;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 2rem;
+  }
+  .modal-login--button {
+    width: 161px;
+    height: 60px;
+    background-color: #303960;
+    border-radius: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
   }
