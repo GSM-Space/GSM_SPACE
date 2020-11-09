@@ -21,7 +21,7 @@ const LoginPopUp = () => {
                 <div className="Google-login">구글 계정으로 로그인 할거임</div>
                 <div className="modal_footer">
                     <div className="forgot_password">비밀번호를 잊으셨나요 ?</div>
-                    <Link to="/petition/ongoing"><div className="modal-login--button">로그인</div></Link>
+                    <Link to="/petition/ongoing" className="modal-login--button"><div>로그인</div></Link>
                 </div>
             </>
     );

@@ -3,7 +3,9 @@ import Header from '../header/Header';
 
 const PetitionTemplate = () => {
     return (
+        <>
         <Header/>
+        </>
     );
 }
 ;
