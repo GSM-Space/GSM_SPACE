@@ -10,10 +10,9 @@
   }
 
 .index_img {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 60.6%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   }
 
 .login-button {
