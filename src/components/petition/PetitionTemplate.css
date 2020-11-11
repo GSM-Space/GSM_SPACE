@@ -1,0 +1,19 @@
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+}
+.list-container {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    background-color: black;
+    height: 800px;
+}
+
+.sidebar-container {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    height: 800px;
+}
