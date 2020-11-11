@@ -1,11 +1,16 @@
 import React from 'react';
-import Header from '../header/Header';
+import './PetitionTemplate.css';
 
 const PetitionTemplate = () => {
     return (
-        <>
-        <Header/>
-        </>
+        <div className="body-container">
+            <div className="list-container">
+            
+            </div>
+            <div className="sidebar-container">
+            
+            </div>
+        </div>
     );
 }
 ;
