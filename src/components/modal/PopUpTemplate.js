@@ -12,6 +12,8 @@ const PopUpTemplate = ( props ) => {
         switch(current) {
             case "logout":
                 return <LoginPopUp/>;
+            case "petition":
+                return 
             default:
         }
     }
