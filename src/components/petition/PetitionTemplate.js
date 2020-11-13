@@ -1,17 +1,35 @@
 import React from 'react';
+import AnsweredPetition from './answered/AnsweredPetition';
+import ExpiredPetition from './expired/ExpriedPetition';
+import OngoingPetition from './ongoing/OngoingPetition';
+import PendingPetition from './pending/PendingPetition';
 import './PetitionTemplate.css';
+
+
+const CurrentPath = () => {
+    const pathName = window.location.pathname;
+    const path = pathName.split('/');
+    
+    switch(path[2]) {
+        case "ongoing":
+            return <OngoingPetition/>;
+        case "expired":
+            return <ExpiredPetition/>;
+        case "pending":
+            return <PendingPetition/>;
+        case "answered":
+            return <AnsweredPetition/>;
+        default:
+            return <OngoingPetition/>;
+    }
+}
 
 const PetitionTemplate = () => {
     return (
         <div className="body-container">
             <div className="list-container">
                 <div className="list-header">
-                    <div className="kind-of-petition--selected">
-                        <div style={{ marginBottom: 17 }}>진행중인 청원</div>
-                    </div>
-                    <div className="kind-of-petition">만료된 청원</div>
-                    <div className="kind-of-petition">답변 대기중인 청원</div>
-                    <div className="kind-of-petition">답변된 청원</div>
+                    {CurrentPath()}
                 </div>
                 <div className="petition-list">
 

@@ -38,10 +38,22 @@
 }
 
 .kind-of-petition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
+    width: 230px;
+    height: 90px;
+    border-radius: 30px;
     font-size: 18px;
+    margin-right: 3%;
     color: #303960;
-    margin: 0% 8% 1.4% 0%;
+    text-decoration: none;
+}
+
+.kind-of-petition:hover {
+    background-color: #303960;
+    color: #ffffff;
 }
 
 .kind-of-petition--selected {
@@ -55,5 +67,6 @@
     border-radius: 30px;
     background-color: #303960;
     color: #ffffff;
-    margin: 0% 8% 0% 0%;
+    margin-right: 3%;
+    cursor: pointer;
 }
