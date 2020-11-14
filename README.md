@@ -48,12 +48,17 @@
  
 ## COMMIT 종류
 CREATE : 파일 생성
+
 ADD : 새기능을 추가하는 경우
+
 UPDATE : 로직 등의 코드 변경
+
 DELETE : 기능을 삭제하는 경우
+
 FIX : 이슈 해결
+
 ETC : 기타 등등
+
 INIT : 프로젝트 초기화
-INIT을 사용할 경우 프로젝트 담당 리더에게 질문후 사용부탁드립니다.
 
 또한, ETC를 사용할 경우 commit Description을 이용해 설명을 자세하게 적어주세요.
