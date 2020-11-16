@@ -1,6 +1,6 @@
 import React from "react"
-import side_img from "./assets/sidebar-img.png"
-import "./sidebar.css"
+import side_img from "assets/sidebar-img.png"
+import "./Sidebar.css"
 
 function side() {
   return (

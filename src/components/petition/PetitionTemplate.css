@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 4.5%;
-    margin-right: 9%;
+    margin-right: 14%;
 }
 
 .petition-list {
@@ -46,7 +46,7 @@
     height: 90px;
     border-radius: 30px;
     font-size: 18px;
-    margin-right: 3%;
+    margin-right: 1%;
     color: #303960;
     text-decoration: none;
 }
@@ -58,15 +58,16 @@
 
 .kind-of-petition--selected {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     width: 230px;
     height: 90px;
     border-radius: 30px;
     background-color: #303960;
     color: #ffffff;
-    margin-right: 3%;
+    margin-right: 1%;
     cursor: pointer;
 }
