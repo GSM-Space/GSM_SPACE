@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from 'assets/logo.png';
+import Logo from 'assets/svg/Logo.js';
 import Key from 'assets/svg/Key.js';
 import Email from 'assets/svg/Email.js';
 import './LoginPopUp.css';
@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const LoginPopUp = () => {
     return (
             <>
-                <img src={logo} alt="로고" style={{ margin: 35 }}/>
+                <Logo style={{ margin: 35 }}/>
                     <div className="modal_title">“ 학교생활을 하면서 불편한 점을 청원해주세요 ! ”</div>
                 <div className="input-wrapper">
                     <Email style={{ marginLeft: 5 }}/>

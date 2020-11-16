@@ -3,6 +3,7 @@ import AnsweredPetition from './answered/AnsweredPetition';
 import ExpiredPetition from './expired/ExpriedPetition';
 import OngoingPetition from './ongoing/OngoingPetition';
 import PendingPetition from './pending/PendingPetition';
+import Sidebar from '../sidebar/Sidebar';
 import './PetitionTemplate.css';
 
 
@@ -32,11 +33,11 @@ const PetitionTemplate = () => {
                     {CurrentPath()}
                 </div>
                 <div className="petition-list">
-
+                    
                 </div>
             </div>
             <div className="sidebar-container">
-            
+                <Sidebar/>
             </div>
         </div>
     );
