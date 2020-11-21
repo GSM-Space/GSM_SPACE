@@ -1,17 +1,35 @@
-import React from "react";
-import MainTemplate from 'components/main/MainTemplate';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Logo from "assets/svg/Logo.js";
+import Index from "assets/index-img.png";
+import PopUpTemplate from "components/modal/PopUpTemplate.js";
 import "./MainPage.css";
+import StudentMain from "components/main/student/StudentMain.js";
 
 const MainPage = () => {
+  const [PopUp, setPopUp] = useState(false);
+
+  const CheckPopUp = () => {
+    setPopUp(!PopUp);
+  };
+
   return (
-    <>
-      <MainTemplate/>
-      <div className="main-title--wrapper">
-          <div className="main-title">“ 학교생활을 하면서 불편한 점은 <br />
-            <span className="gsm-space">GSM SPACE</span>로 청원해주세요 ! ” </div>
-        </div>
-    </>
-  )
-}
+    <div className="Background">
+      <div className="main-header">
+        <Link to="/">
+          <Logo className="main-logo" />
+        </Link>
+        <button className="login-button" onClick={CheckPopUp}>
+          로그인
+        </button>
+      </div>
+      <StudentMain />
+      <img src={Index} alt="이미지" className="index_img" />
+      {PopUp ? (
+        <PopUpTemplate toggle={CheckPopUp} currentState="logout" />
+      ) : null}
+    </div>
+  );
+};
 
 export default MainPage;
