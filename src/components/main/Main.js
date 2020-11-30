@@ -1,33 +1,14 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Logo from "assets/svg/Logo.js";
-import IndexImg from "assets/index-img.png";
-import PopUpTemplate from "components/modal/PopUpTemplate.js";
+import React from "react";
 import StudentMain from "./student/StudentMain";
+import Header from "../header/Header";
 import "./Main.css";
 
 const Main = () => {
-  const [PopUp, setPopUp] = useState(false);
-
-  const CheckPopUp = () => {
-    setPopUp(!PopUp);
-  };
-
   return (
-    <>
-      <div className="main-header">
-        <Link to="/">
-          <Logo className="main-logo" />
-        </Link>
-        <button className="login-button" onClick={CheckPopUp}>
-          로그인
-        </button>
-      </div>
+    <div className="Background">
+      <Header isLogin={false} />
       <StudentMain />
-      {PopUp ? (
-        <PopUpTemplate toggle={CheckPopUp} currentState="logout" />
-      ) : null}
-    </>
+    </div>
   );
 };
 
