@@ -9,7 +9,7 @@
   justify-content: center;
   flex-direction: column;
   flex: 0.88;
-  height: 740px;
+  height: 80.5vh;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   margin-top: 2%;
@@ -99,11 +99,11 @@ img {
   border-radius: 10px;
 }
 
-button {
+.petition-button {
   cursor: pointer;
   font-weight: bold;
   font-size: 18px;
-  width: 396px;
+  width: 90%;
   color: #ffffff;
   background: #ffb61d;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

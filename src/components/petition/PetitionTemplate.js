@@ -6,6 +6,39 @@ import PendingPetition from "./pending/PendingPetition";
 import Sidebar from "../sidebar/Sidebar";
 import "./PetitionTemplate.css";
 
+const PetitionList = [
+  {
+    id: 20,
+    title: "전공동아리 시간을 좀 더 늘려주세요!",
+    agreed: 85,
+    end_at: "2020.11.09",
+  },
+  {
+    id: 20,
+    title: "전공동아리 시간을 좀 더 늘려주세요!",
+    agreed: 85,
+    end_at: "2020.11.09",
+  },
+  {
+    id: 20,
+    title: "전공동아리 시간을 좀 더 늘려주세요!",
+    agreed: 85,
+    end_at: "2020.11.09",
+  },
+  {
+    id: 20,
+    title: "전공동아리 시간을 좀 더 늘려주세요!",
+    agreed: 85,
+    end_at: "2020.11.09",
+  },
+  {
+    id: 20,
+    title: "전공동아리 시간을 좀 더 늘려주세요!",
+    agreed: 85,
+    end_at: "2020.11.09",
+  },
+];
+
 const CurrentPath = () => {
   const pathName = window.location.pathname;
   const path = pathName.split("/");
@@ -25,11 +58,19 @@ const CurrentPath = () => {
 };
 
 const PetitionTemplate = () => {
+  // const MappingPetitionList = () => {
+  //   PetitionList.map((list, idx) => (
+
+  //   ))
+  // }
   return (
     <div className="body-container">
       <div className="list-container">
         <div className="list-header">{CurrentPath()}</div>
-        <div className="petition-list"></div>
+        <div className="petition-list-wrapper">
+          <div className="petition-list-header"></div>
+          <div className="petition-list"></div>
+        </div>
       </div>
       <Sidebar />
     </div>

@@ -26,7 +26,7 @@ function side() {
           </div>
         </div>
       </div>
-      <button>지금 청원하기</button>
+      <button className="petition-button">지금 청원하기</button>
     </div>
   );
 }
