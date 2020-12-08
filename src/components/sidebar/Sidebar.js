@@ -2,7 +2,7 @@ import React from "react";
 import Side from "assets/svg/Side.js";
 import "./Sidebar.css";
 
-function side() {
+const side = () => {
   return (
     <div className="article">
       <div className="header">
@@ -11,7 +11,7 @@ function side() {
           <span className="GSM">GSM SPACE</span>로 청원해주세요 !”
         </div>
       </div>
-      <Side style={{ flex: 4 }} />
+      <Side className="sidebar-img" />
       <div className="section">
         <div className="section_h1">총 청원 수</div>
         <div className="unit">
@@ -29,6 +29,6 @@ function side() {
       <button className="petition-button">지금 청원하기</button>
     </div>
   );
-}
+};
 
 export default side;

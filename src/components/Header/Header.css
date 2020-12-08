@@ -84,6 +84,17 @@
   font-size: 20px;
 }
 
+.welcome-text {
+  font-size: 18px;
+  font-weight: bold;
+  flex: 3;
+}
+
+.welcome-name {
+  font-size: 23px;
+  font-weight: bold;
+}
+
 .login-button:hover {
   box-shadow: none;
   background: rgb(36, 43, 75);
@@ -100,6 +111,24 @@
     height: 45px;
     border-radius: 17px;
     font-size: 17px;
+  }
+  .welcome-text {
+    font-size: 15px;
+  }
+  .welcome-name {
+    font-size: 20px;
+  }
+  .search-input {
+    font-size: 15px;
+  }
+  .logout-box {
+    font-size: 9px;
+  }
+  .welcome-box {
+    margin-right: -5%;
+  }
+  .header-input--wrapper {
+    margin-left: 5rem;
   }
 }
 
