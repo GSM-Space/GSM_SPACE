@@ -25,7 +25,10 @@ img {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex: 1;
+  width: 85%;
   margin-bottom: 8%;
 }
 
@@ -45,21 +48,16 @@ img {
 }
 
 .section_h1 {
-  padding: 24px 0 0 26px;
+  padding: 24px 65% 0px 0;
   font-weight: bold;
   font-size: 16px;
 }
 
 .all_petitions {
   font-family: "Roboto Slab", serif;
-  padding: 0 0 0 141px;
   font-weight: bold;
   color: #6372a8;
   font-size: 40px;
-}
-
-.gray_box div {
-  padding: 13px 20px 13px 20px;
 }
 
 .unit {
@@ -90,13 +88,14 @@ img {
 }
 
 .gray_box {
-  margin: 0 21px 23px 21px;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
-  width: 320px;
-  height: 60px;
+  width: 88.5%;
+  height: 6vh;
   background: rgba(48, 57, 96, 0.59);
   border-radius: 10px;
+  margin-bottom: 5%;
 }
 
 .petition-button {
@@ -112,4 +111,43 @@ img {
   outline: 0;
   flex: 0.6;
   margin-bottom: 6%;
+}
+
+.sidebar-img {
+  flex: 4;
+  width: 90%;
+}
+
+@media (max-width: 1700px) {
+  .h1 {
+    font-size: 17px;
+  }
+  .GSM {
+    font-size: 27px;
+  }
+  .section_h1 {
+    font-size: 13px;
+  }
+  .all_petitions {
+    font-size: 35px;
+  }
+  .gray-fir-ch {
+    font-size: 21px;
+  }
+  .gray-sec-ch {
+    font-size: 21px;
+  }
+  .gray_box div {
+    font-size: 9px;
+  }
+  .article {
+    height: 78vh;
+  }
+  .sidebar-img {
+    flex: 5;
+  }
+  .petition-button {
+    font-size: 15px;
+    border-radius: 10px;
+  }
 }

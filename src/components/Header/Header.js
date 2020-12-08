@@ -16,16 +16,15 @@ const Header = ({ isLogin }) => {
     <>
       {isLogin ? (
         <div className="header-container">
-          <Logo />
+          <Logo className="main-logo" />
           <div className="header-input--wrapper">
             <Search style={{ marginBottom: 10 }} />
             <input className="search-input" placeholder="검색어를 입력하세요" />
           </div>
           <div className="welcome-box" style={{ color: "#FFFFFF" }}>
             <Profile style={{ flex: 1 }} />
-            <div style={{ fontSize: 18, fontWeight: "bold", flex: 3 }}>
-              <span style={{ fontSize: 23, fontWeight: "bold" }}>진예원 </span>
-              님 환영합니다 !
+            <div className="welcome-text">
+              <span className="welcome-name">진예원 </span>님 환영합니다 !
             </div>
             <Link to="/" className="logout-box">
               <div>로그아웃</div>
