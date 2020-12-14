@@ -1,11 +1,13 @@
 import React from "react";
 import Header from "components/header/Header";
-import "./PetitionPage.css";
+import PetitionPost from "components/post/PetitionPost";
+import "./Petition.css";
 
 const PetitionPostPage = ({ match }) => {
   return (
-    <div className="petition-background">
+    <div className="petition-post-background">
       <Header isLogin={true} />
+      <PetitionPost match={match} />
     </div>
   );
 };
