@@ -1,5 +1,6 @@
 import React from 'react';
 import LoginPopUp from './Auth/LoginPopUp';
+import WarningPopUp from './Auth/WarningPopUp';
 import './PopUpTemplate.css';
 
 const PopUpTemplate = ( props ) => {
@@ -12,8 +13,8 @@ const PopUpTemplate = ( props ) => {
         switch(current) {
             case "logout":
                 return <LoginPopUp/>;
-            case "petition":
-                return 
+            case "warning":
+                return <WarningPopUp />;
             default:
         }
     }

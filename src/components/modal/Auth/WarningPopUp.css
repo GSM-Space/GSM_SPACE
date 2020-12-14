@@ -1,0 +1,77 @@
+
+.warning_head_title{
+    display: flex;
+    font-family: Roboto Slab;
+    font-weight: bold;
+    font-size: 25px;
+    color: #4F4F4F;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.petition_step{
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #DCDCDC;
+    border: 1px solid #5E5E5E;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 960px;
+}
+.warning_text {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.warning_text_title{
+
+    font-family: Righteous;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #4F4F4F;
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 20px;
+   
+}
+.steps_id{
+    
+    outline: none;
+    background: #FFFFFF;
+    border: 8px solid #303960;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Roboto Slab;
+    margin-bottom: 20px;
+    
+}
+.steps_content{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+    
+
+}
+.steps{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    
+    font-family: Righteous;
+    color: #636363;
+}
