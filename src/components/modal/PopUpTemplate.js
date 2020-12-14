@@ -17,14 +17,17 @@ const PopUpTemplate = ( props ) => {
                 return <WarningPopUp />;
             default:
         }
-    }
-    return (
-        <div className="modal" onClick={ClosePopUp}>
-            <div className="modal_content" onClick={Event => Event.stopPropagation()}>
-                {Modal(props.currentState)}
-            </div>
-        </div>
-    );
-}
+  };
+  return (
+    <div className="modal" onClick={ClosePopUp}>
+      <div
+        className="modal_content"
+        onClick={(Event) => Event.stopPropagation()}
+      >
+        {Modal(props.currentState)}
+      </div>
+    </div>
+  );
+};
 
 export default PopUpTemplate;

@@ -1,17 +1,8 @@
 import React from "react";
-import MainTemplate from 'components/main/MainTemplate';
-import "./MainPage.css";
+import Main from "components/main/Main";
 
 const MainPage = () => {
-  return (
-    <>
-      <MainTemplate/>
-      <div className="main-title--wrapper">
-          <div className="main-title">“ 학교생활을 하면서 불편한 점은 <br />
-            <span className="gsm-space">GSM SPACE</span>로 청원해주세요 ! ” </div>
-        </div>
-    </>
-  )
-}
+  return <Main />;
+};
 
 export default MainPage;

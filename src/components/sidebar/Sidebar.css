@@ -1,14 +1,19 @@
 /** @format */
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
 .article {
-  width: 460px;
-  height: 740px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 0.88;
+  height: 80.5vh;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
-  margin-top: 35px;
+  margin-top: 2%;
+  margin-right: 3%;
 }
 
 img {
@@ -16,56 +21,53 @@ img {
 }
 
 .section {
-  margin-left: 40px;
-  margin-bottom: 39px;
-  width: 396px;
-  height: 220px;
   box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 85%;
+  margin-bottom: 8%;
 }
 
 .GSM {
   font-weight: 400;
-  line-height: 90px;
+  line-height: 60px;
   color: rgba(48, 57, 96, 1);
-  font-size: 35px;
-  font-family: 'Righteous', cursive;
+  font-size: 31px;
+  font-family: "Righteous", cursive;
 }
 
 .h1 {
-  width: 405px;
-  height: 106px;
   font-weight: bold;
-  padding: 39px 28px 0 27px;
-  font-size: 25px;
+  margin-top: 45px;
+  font-size: 21px;
+  flex: 2;
 }
 
 .section_h1 {
-  padding: 24px 0 0 26px;
+  padding: 24px 65% 0px 0;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .all_petitions {
-  font-family: 'Roboto Slab', serif;
-  padding: 0 0 0 141px;
+  font-family: "Roboto Slab", serif;
   font-weight: bold;
   color: #6372a8;
-  font-size: 50px;
-}
-
-.gray_box div {
-  padding: 13px 20px 13px 20px;
+  font-size: 40px;
 }
 
 .unit {
-  margin-bottom: 17px;
+  margin-bottom: 15px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .gray-fir-ch {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   padding-left: 15px;
   color: #ffb61d;
   font-size: 26px;
@@ -73,7 +75,7 @@ img {
 }
 
 .gray-sec-ch {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   padding-left: 15px;
   color: #a0c1ff;
   font-size: 26px;
@@ -86,26 +88,66 @@ img {
 }
 
 .gray_box {
-  margin: 0 21px 23px 21px;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
-  width: 355px;
-  height: 60px;
+  width: 88.5%;
+  height: 6vh;
   background: rgba(48, 57, 96, 0.59);
   border-radius: 10px;
+  margin-bottom: 5%;
 }
 
-button {
+.petition-button {
   cursor: pointer;
-  margin-left: 40px;
-  border: solid 0;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  width: 90%;
   color: #ffffff;
-  padding: 13px 140px 13px 140px;
   background: #ffb61d;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   border: 0;
   outline: 0;
+  flex: 0.6;
+  margin-bottom: 6%;
+}
+
+.sidebar-img {
+  flex: 4;
+  width: 90%;
+}
+
+@media (max-width: 1700px) {
+  .h1 {
+    font-size: 17px;
+  }
+  .GSM {
+    font-size: 27px;
+  }
+  .section_h1 {
+    font-size: 13px;
+  }
+  .all_petitions {
+    font-size: 35px;
+  }
+  .gray-fir-ch {
+    font-size: 21px;
+  }
+  .gray-sec-ch {
+    font-size: 21px;
+  }
+  .gray_box div {
+    font-size: 9px;
+  }
+  .article {
+    height: 78vh;
+  }
+  .sidebar-img {
+    flex: 5;
+  }
+  .petition-button {
+    font-size: 15px;
+    border-radius: 10px;
+  }
 }

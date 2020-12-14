@@ -1,0 +1,22 @@
+.post-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.petition-post-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  background-color: #ffffff;
+}
+
+.petition-post {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #acacac;
+  flex: 1;
+  border-radius: 20px;
+  margin: 3% 5% 0% 5%;
+}
