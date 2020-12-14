@@ -1,0 +1,113 @@
+.modal_title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 3rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40%;
+  height: 6.5%;
+  background: #ffffff;
+  border: 1px solid #303960;
+  border-radius: 20px;
+  margin-bottom: 3%;
+}
+
+.email-input {
+  width: 350px;
+  border: 0;
+  padding-left: 8px;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.email-input::placeholder {
+  color: #a6a6a6;
+}
+
+.Google-login {
+  width: 40%;
+  height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  color: #303960;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #303960;
+  border-radius: 20px;
+  margin-top: 2%;
+}
+
+.modal_footer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2px;
+  margin-top: 7.4%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot_password {
+  color: #303960;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 2rem;
+}
+
+.modal-login--button {
+  width: 161px;
+  height: 60px;
+  background-color: #303960;
+  border-radius: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+.modal-login--button:hover {
+  box-shadow: none;
+  background: rgb(36, 43, 75);
+  transition: 0.7s;
+}
+
+input:focus {
+  outline: none;
+}
+
+.popup-logo {
+  height: 13.5%;
+  margin: 35px;
+}
+
+@media (max-width: 1700px) {
+  .modal_title {
+    font-size: 15px;
+  }
+  .modal-login--button {
+    width: 130px;
+    height: 45px;
+    font-size: 15px;
+  }
+  .forgot_password {
+    font-size: 7px;
+  }
+  .Google-login {
+    font-size: 9px;
+    height: 27px;
+  }
+  .email-input {
+    font-size: 10px;
+  }
+}

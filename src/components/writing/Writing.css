@@ -1,0 +1,96 @@
+.write_board{
+
+    background: #303960;
+    width: 67%;
+    border-radius: 20px;
+    height: 1550px;
+    margin-bottom: 2%;
+    margin-left:5%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.petition--header {
+    display: flex;
+    flex: 0.1;
+    justify-content: center;
+    align-items: center;
+}
+.petition{
+    font-weight: bold;
+    font-size: 35px;
+    color: #FFFFFF;
+    margin-left:45%;
+}
+.line{
+    border: 0.5px solid #FFFFFF;
+    width: 85%;
+    
+}
+
+.petition_input{
+
+    flex: 1;
+    margin-top:35px;
+    margin-left: 15%;
+
+}
+.content_title{
+
+    margin-right:32px;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.title_input{
+
+    border: 0;
+    outline: 0;
+    width: 80%;
+    margin-top:15px;
+    height: 70px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-size:25px;
+}
+.petition_content{
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-top: 3%;
+    
+}
+.content_input{
+
+    width: 80%;
+    margin-top:15px;
+    height: 380px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-size:25px;
+    border: 0;
+    outline: 0;
+    
+}
+.writing_btn{
+
+    border: 0;
+    outline: 0;
+    background: #FFB61D;
+    border-radius: 20px;
+    color: #FFFFFF;
+    height: 60px;
+    width: 13%;
+    font-weight: bold;
+    font-size: 25px;
+  
+}
+
+.btn_center{
+    text-align: center; 
+    margin-bottom: 80px;
+}
+
+.mark {
+    margin-left:auto;
+    margin-right: 100px;
+}
