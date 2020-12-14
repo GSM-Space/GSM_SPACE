@@ -1,13 +1,13 @@
 import React from "react";
 import PetitionTemplate from "components/petition/PetitionTemplate";
 import Header from "components/header/Header";
-import "./PetitionPage.css";
+import "./Petition.css";
 
-const PetitionPage = () => {
+const PetitionPage = ({ match }) => {
   return (
     <div className="petition-background">
       <Header isLogin={true} />
-      <PetitionTemplate />
+      <PetitionTemplate match={match} />
     </div>
   );
 };

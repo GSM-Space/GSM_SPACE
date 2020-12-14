@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const LoginPopUp = () => {
   return (
     <>
-      <Logo style={{ margin: 35 }} />
+      <Logo className="popup-logo" />
       <div className="modal_title">
         “ 학교생활을 하면서 불편한 점을 청원해주세요 ! ”
       </div>

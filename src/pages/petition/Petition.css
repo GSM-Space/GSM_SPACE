@@ -1,0 +1,13 @@
+.petition-background {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.petition-post-background {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  flex-direction: column;
+}

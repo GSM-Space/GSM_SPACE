@@ -1,14 +1,14 @@
-import React from 'react';
-import { Route } from 'react-router-dom';
-import { Petition, Main } from 'pages';
+import React from "react";
+import { Route } from "react-router-dom";
+import { Petition, Main, Post } from "pages";
 
 const Router = () => {
-    return(
-        <>
-            <Route exact path="/" component={Main} />
-            <Route path="/petition/:state" component={Petition} />
-        </>
-    );
-}
-
+  return (
+    <>
+      <Route exact path="/" component={Main} />
+      <Route exact path="/petition/:status" component={Petition} />
+      <Route path="/petition/:status/post/:id" component={Post} />
+    </>
+  );
+};
 export default Router;
