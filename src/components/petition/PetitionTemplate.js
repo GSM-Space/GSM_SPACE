@@ -39,11 +39,8 @@ const PetitionList = [
   },
 ];
 
-const CurrentPath = () => {
-  const pathName = window.location.pathname;
-  const path = pathName.split("/");
-
-  switch (path[2]) {
+const CurrentPath = (Path) => {
+  switch (Path) {
     case "ongoing":
       return <OngoingPetition />;
     case "expired":
@@ -57,11 +54,11 @@ const CurrentPath = () => {
   }
 };
 
-const PetitionTemplate = () => {
+const PetitionTemplate = ({ match }) => {
   return (
     <div className="body-container">
       <div className="list-container">
-        <div className="list-header">{CurrentPath()}</div>
+        <div className="list-header">{CurrentPath(match.params.status)}</div>
         <div className="petition-list-wrapper">
           <div className="petition-list-header">
             <div style={{ width: "29.5%", paddingLeft: 35 }}>번호</div>
