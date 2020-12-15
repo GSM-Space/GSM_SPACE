@@ -1,18 +1,22 @@
-import React from "react";
-import LoginPopUp from "./Auth/LoginPopUp";
-import "./PopUpTemplate.css";
+import React from 'react';
+import LoginPopUp from './Auth/LoginPopUp';
+import WarningPopUp from './Auth/WarningPopUp';
+import './PopUpTemplate.css';
 
-const PopUpTemplate = (props) => {
-  const ClosePopUp = () => {
-    props.toggle();
-  };
-
-  const Modal = (current) => {
-    switch (current) {
-      case "logout":
-        return <LoginPopUp />;
-      default:
+const PopUpTemplate = ( props ) => {
+    
+    const ClosePopUp = () => {
+        props.toggle();
     }
+    
+    const Modal = ( current ) => {
+        switch(current) {
+            case "logout":
+                return <LoginPopUp/>;
+            case "warning":
+                return <WarningPopUp />;
+            default:
+        }
   };
   return (
     <div className="modal" onClick={ClosePopUp}>
