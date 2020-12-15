@@ -22,12 +22,6 @@ const ongoinglist = [
   },
 ];
 
-const Fontcolor = (colors) => {
-    switch(colors){
-      case "진행 중":
-        return 
-    }
-  }
 const Management = () => {
   return (
     <>
@@ -63,8 +57,8 @@ const Management = () => {
               <div className="management_content_list">
                 <div style={{ marginLeft: 35 }}>{list.num}</div>
                 <div>{list.title}</div>
-                <div style={{color: '#6372A8'}}>{list.person}명</div>
-                <div style={{color: '#949494'}}>{list.end_date}</div>
+                <div style={{ color: "#6372A8" }}>{list.person}명</div>
+                <div style={{ color: "#949494" }}>{list.end_date}</div>
                 <div>{list.state}</div>
                 <div style={{ marginRight: 25 }}>
                   <button className="edit_btn">
