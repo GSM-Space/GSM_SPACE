@@ -1,39 +1,57 @@
 # GSM_SPACE
 
-**훌륭한 Git 커밋 메시지의 일곱 가지 규칙**
+학생들의 편리한 학교생활을 위해 청원을 할 수 있는 청원게시판 웹사이트입니다.
 
-- 제목과 본문을 빈 행으로 분리한다
-- 제목 행을 50자로 제한한다
-- 제목 행 첫 글자는 대문자로 쓴다
-- 제목 행 끝에 마침표를 넣지 않는다
-- 제목 행에 명령문을 사용한다
-- 본문을 72자 단위로 개행한다
-- 어떻게 보다는 무엇과 왜를 설명한다
+## User
 
-# 구조 작성
+### 청원 목록 페이지
 
-### Pages
+- 청원 목록 불러오기 (최신순, 인기순 정렬 및 청원 진행 상태 별로 불러오기)
+- 청원 수 불러오기 ( 총 청원, 답변 수, 답변 대기 등)
+- 청원 검색 기능
 
-- 파일 이름 + Page 붙이기 ex) 메인페이지를 만들 때 MainPage.js
-- Pages는 그 페이지의 토대일뿐, Pages에 html 하드코딩 하지않기
-- Container + Components = Pages , 즉 Pages 안에는 Component or Container 파일 import 하기
-- Page폼 또는 템플릿은 Component에 작성해서 import하기, ex) MainPages면 MainTemplate.js는 Components의 main 폴더 안에 작성
+### 청원 세부 페이지
 
-### Container
+- 청원 상세 내용 불러오기
+- 청원 동의하기
+- 목록으로 되돌아 가기
 
-- Redux 관리를 위한 Container이므로 안에 Component만 import 하기
+### 청원 하기 페이지
 
-### Components
+- 청원 내용 작성
+- 청원 절차 및 유의 사항
 
-- Header, Footer 등 각 기능 작성
-- 비슷한 기능들은 한 폴더에 묶어두기 ex) Login, register는 Auth 폴더 안에 묶어서 작성
+### 로그인
 
-# 개발하기 전에
+- 학교계정으로 로그인
 
-- 기능 구현은 다같이 할 것이니 퍼블리싱만 하기
-- Redux는 아직 제대로 파고들 필요 없음. 기본 상태 관리만 할것임
-- 기술 스택 : React Hooks, css, Redux, Axios
-- 커밋하기 전에 리뷰 받고 커밋하기
-- 커밋을 했는데 컨플릭트 발생 시에 디코 주기
-- Node Path를 적용해두었으니 src폴더 기준으로 절대 경로로 import 할 수 있음
-- Router.js에 라우팅되어있는 페이지 대로 역할 맡아 개발
+[Integrating Google Sign-In into your web app](https://developers.google.com/identity/sign-in/web/sign-in)
+
+## Admin
+
+### 청원 관리
+
+- 청원 목록 불러오기 (최신순, 인기순 정렬 및 청원 진행 상태 별로 불러오기)
+- 삭제된 청원 목록 불러오기
+
+### 청원 세부 페이지
+
+- 청원 삭제하기 (관리자가 삭제된 청원 따로 확인 가능)
+- 청원자 청원 등록 금지 시키기
+- 청원자 청원 등록 금지 해제
+- 청원 답변 등록 하기
+
+## 커밋 규칙
+
+[커밋 종류] 내용 순으로 함
+ 
+## COMMIT 종류
+CREATE : 파일 생성
+
+ADD : 새기능을 추가
+
+UPDATE : 로직 등의 코드 변경
+
+DELETE : 기능 삭제
+
+FIX : 이슈 해결
