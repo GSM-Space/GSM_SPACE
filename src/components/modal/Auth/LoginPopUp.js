@@ -6,13 +6,13 @@ import GoogleLogin from "react-google-login";
 import "./LoginPopUp.css";
 import { Link } from "react-router-dom";
 
-const saveAsFile = (str, filename) => {
-  var hiddenElement = document.createElement("a");
-  hiddenElement.href = "data:attachment/text," + encodeURI(str);
-  hiddenElement.target = "_blank";
-  hiddenElement.download = filename;
-  hiddenElement.click();
-};
+// const saveAsFile = (str, filename) => {
+//   var hiddenElement = document.createElement("a");
+//   hiddenElement.href = "data:attachment/text," + encodeURI(str);
+//   hiddenElement.target = "_blank";
+//   hiddenElement.download = filename;
+//   hiddenElement.click();
+// };
 
 const responseSuccess = (res) => {
   console.log(res);
