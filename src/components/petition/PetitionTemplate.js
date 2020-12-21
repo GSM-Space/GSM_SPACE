@@ -199,8 +199,25 @@ const PetitionTemplate = ({ match }) => {
                     <div className="petition-answered-title">{list.title}</div>
                   </div>
                   <div className="petition-answered-gray-box">
-                    <div className="petition-answered-member">청원답변</div>
-                    <div className="petition-answered-date">답변일</div>
+                    <div className="petition-answered-member">
+                      <div>참여인원</div>
+                      <div className="agreed-member">
+                        168
+                        <span
+                          style={{
+                            fontSize: 15,
+                            fontFamily: "Roboto Slab",
+                            color: "#ffffff",
+                          }}
+                        >
+                          명
+                        </span>
+                      </div>
+                    </div>
+                    <div className="petition-answered-date">
+                      <div>답변일</div>
+                      <div className="answered-date">2020.12.21</div>
+                    </div>
                   </div>
                 </div>
               </Fragment>

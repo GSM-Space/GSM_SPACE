@@ -60,7 +60,7 @@
 .petition-answered-list {
   display: flex;
   flex-direction: row;
-  flex: 2;
+  height: 16vh;
   background-color: white;
   margin: 3.5% 4% 0% 4%;
   border-radius: 20px;
@@ -176,17 +176,44 @@
 
 .petition-answered-member {
   display: flex;
+  flex-direction: column;
   flex: 1;
   align-items: center;
   justify-content: center;
   color: #ffffff;
 }
-.petition-answered-date {
+
+petition-answered-agreed {
   display: flex;
+  flex-direction: row;
   flex: 1;
   align-items: center;
   justify-content: center;
   color: #ffffff;
+}
+
+.petition-answered-date {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.answered-date {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 17px;
+  padding-top: 9px;
+  color: #ffffff;
+}
+
+.agreed-member {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: #ffb61d;
 }
 
 @media (max-width: 1700px) {
