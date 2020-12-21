@@ -57,6 +57,23 @@
   border-radius: 10px;
 }
 
+.petition-answered-list {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  background-color: white;
+  margin: 3.5% 4% 0% 4%;
+  border-radius: 20px;
+}
+
+.petition-answered-page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-radius: 15px;
+  margin: 0% 4% 1% 4%;
+}
+
 .petition-list-content-wrapper {
   display: flex;
   align-items: center;
@@ -111,6 +128,65 @@
   color: #ffffff;
   margin-right: 1%;
   cursor: pointer;
+}
+
+.petition-answered-title-wrapper {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.petition-answered-gray-box {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background-color: rgba(48, 57, 96, 0.59);
+  margin: 2% 5% 2% 15%;
+}
+
+.petition-answered-id {
+  display: flex;
+  width: 145px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  height: 43px;
+  background-color: #303960;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.petition-answered-title {
+  display: flex;
+  font-weight: bold;
+  font-size: 22px;
+  align-items: center;
+  margin-bottom: 5.5%;
+  margin-top: 5%;
+  margin-left: 9%;
+}
+
+.petition-answered-member {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.petition-answered-date {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
 }
 
 @media (max-width: 1700px) {
