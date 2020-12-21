@@ -199,7 +199,7 @@ const PetitionTemplate = ({ match }) => {
                     <div className="petition-answered-title">{list.title}</div>
                   </div>
                   <div className="petition-answered-gray-box">
-                    <div className="petition-answered-member"></div>
+                    <div className="petition-answered-member">청원답변</div>
                     <div className="petition-answered-date">답변일</div>
                   </div>
                 </div>
