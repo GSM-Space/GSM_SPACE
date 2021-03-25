@@ -1,9 +1,11 @@
-import React from "react";
-import logo from "assets/logo.png";
+import React, { useState } from "react";
+import Logo from "assets/svg/Logo";
 import trash from "assets/trash.png";
 import edit from "assets/edit.png";
 import filter from "assets/filter.png";
 import "./Management.css";
+import FilterPopUpTemplate from "components/modal/Auth/filter/PopUpTemplate.js";
+import DeletePopUpTemplate from "components/modal/Auth/management/PopUpTemplate.js";
 
 const ongoinglist = [
   {
@@ -23,14 +25,25 @@ const ongoinglist = [
 ];
 
 const Management = () => {
+  const [PopUp, setPopUp] = useState(false);
+  const [DeletePopUp, setDeletePopUp] = useState(false);
+
+  const CheckPopUp = () => {
+    setPopUp(!PopUp);
+  };
+
+  const DeleteCheckPopUp = () => {
+    setDeletePopUp(!DeletePopUp);
+  };
   return (
     <>
       <div className="management_header">
-        <img src={logo} alt="logo" />
+        <Logo />
         <div className="management_title">청원 관리</div>
       </div>
+      <div className="deleted_petition">삭제된 청원보기</div>
       <div className="border_header">
-        <button className="filter">
+        <button className="filter" onClick={CheckPopUp}>
           <img src={filter} alt="filter" className="filter_img" />
           <span className="filter_text">Filter</span>
         </button>
@@ -42,11 +55,11 @@ const Management = () => {
       </div>
       <div className="sort_bar">
         <div className="sort_bar_title">
-          <div style={{ marginLeft: 35 }}>번호</div>
-          <div>제목</div>
-          <div>참여인원</div>
-          <div>청원 만료일</div>
-          <div>청원상태</div>
+          <div style={{ width: "20%", paddingLeft: 35 }}>번호</div>
+          <div style={{ width: "17%" }}>제목</div>
+          <div style={{ width: "17%" }}>참여인원</div>
+          <div style={{ width: "17%" }}>청원 만료일</div>
+          <div style={{ width: "20%" }}>청원상태</div>
           <div>답변/삭제</div>
         </div>
       </div>
@@ -55,17 +68,23 @@ const Management = () => {
           {ongoinglist.map((list) => (
             <>
               <div className="management_content_list">
-                <div style={{ marginLeft: 35 }}>{list.num}</div>
-                <div>{list.title}</div>
-                <div style={{ color: "#6372A8" }}>{list.person}명</div>
-                <div style={{ color: "#949494" }}>{list.end_date}</div>
-                <div>{list.state}</div>
+                <div style={{ width: "15.5%", paddingLeft: 45 }}>
+                  {list.num}
+                </div>
+                <div style={{ width: "22%" }}>{list.title}</div>
+                <div style={{ color: "#6372A8", width: "16.5%" }}>
+                  {list.person}명
+                </div>
+                <div style={{ color: "#949494", width: "16.5%" }}>
+                  {list.end_date}
+                </div>
+                <div style={{ width: "18%" }}>{list.state}</div>
                 <div style={{ marginRight: 25 }}>
-                  <button className="edit_btn">
-                    <img src={edit} alt="edit" />
+                  <button className="edit_btn" onClick={DeleteCheckPopUp}>
+                    <img src={edit} alt="edit" style={{ marginLeft: 0 }} />
                   </button>
                   <button className="trash_btn">
-                    <img src={trash} alt="trash" />
+                    <img src={trash} alt="trash" style={{ marginLeft: 0 }} />
                   </button>
                 </div>
               </div>
@@ -73,6 +92,15 @@ const Management = () => {
             </>
           ))}
         </div>
+        {PopUp ? (
+          <FilterPopUpTemplate toggle={CheckPopUp} currentState="filter" />
+        ) : null}
+        {DeletePopUp ? (
+          <DeletePopUpTemplate
+            toggle={DeleteCheckPopUp}
+            currentState="delete"
+          />
+        ) : null}
       </div>
     </>
   );

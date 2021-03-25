@@ -1,153 +1,134 @@
-.management_header{
-   
-    padding: 56px 113px 70px 65px;
-    
+.management_header {
+  padding: 56px 113px 70px 65px;
 }
-.management_title{
-    
-    font-family: Roboto Slab;
-    font-weight: bold;
-    font-size: 35px;
-    color: #000000;
-    justify-items: center;
-    text-align: center;
-    display: block;
-    margin-top: -50px;  
-
+.management_title {
+  font-family: Roboto Slab;
+  font-weight: bold;
+  font-size: 35px;
+  color: #000000;
+  justify-items: center;
+  text-align: center;
+  display: block;
+  margin-top: -50px;
 }
-.border_header{
-    
-    display: flex;
-    width: 100%;
-    height: 95px;
-    background: #303960;
-    border-radius: 20px 20px 0px 0px;
-    justify-content: space-between;
-    
-    
+.border_header {
+  display: flex;
+  width: 100%;
+  height: 95px;
+  background: #303960;
+  border-radius: 20px 20px 0px 0px;
+  justify-content: space-between;
 }
 
-.filter{
-    
-    background: #FFFFFF;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    width: 115px;
-    height: 55px;
-    margin-top: 20px;
-    margin-left: 35px;
-    outline: none;
-    border: 0;
-    
-    
+.filter {
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 115px;
+  height: 55px;
+  margin-top: 20px;
+  margin-left: 35px;
+  outline: none;
+  border: 0;
 }
 
-.filter_img{
-
-    width: 27px;
+.filter_img {
+  width: 27px;
 }
 
-.filter_text{
-
-    font-family: Roboto Slab;
-    font-weight: bold;
-    font-size: 20px;
-    color: #A5A5A5;
-    margin-bottom: 1rem;
- 
+.filter_text {
+  font-family: Roboto Slab;
+  font-weight: bold;
+  font-size: 20px;
+  color: #a5a5a5;
+  margin-bottom: 1rem;
 }
 
-.management_btn{
-    
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    outline: 0;
-    border: 0;
-    width: 115px;
-    height: 55px;
-    margin-top: 20px;
-    margin-right: 35px;
-    font-family: Roboto Slab;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
-    color: #303960;
-
-   
+.management_btn {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  width: 115px;
+  height: 55px;
+  margin-top: 20px;
+  margin-right: 35px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #303960;
 }
-.management_search{
-    
-    width: 30%;
-    height: 55px;
-    margin-top: 20px;
-    background: #FFFFFF;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    text-indent: 10px;
+.management_search {
+  width: 30%;
+  height: 55px;
+  margin-top: 20px;
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  text-indent: 10px;
 }
-.management_search::placeholder{
-
-    font-family: Roboto Slab;
-    font-weight: bold;
-    font-size: 18px;
-    color: #979797;
-    
+.management_search::placeholder {
+  font-family: Roboto Slab;
+  font-weight: bold;
+  font-size: 18px;
+  color: #979797;
 }
 
-.sort_bar{
-    background: rgba(48, 57, 96, 0.15);
-    width: 100%;
-    height: 85px;
+.sort_bar {
+  background: rgba(48, 57, 96, 0.15);
+  width: 100%;
+  height: 85px;
 }
 
-.sort_bar_title{
-    
-    font-family: Roboto Slab;
-    font-weight: 100;
-    font-size: 18px;
-    display: flex;
-    flex-direction: row;
-    padding: 30px 50px 30px 30px;
-    color: #000000;
-    justify-content: space-between;
-
+.sort_bar_title {
+  font-family: Roboto Slab;
+  font-weight: 100;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  padding: 30px 20px 30px 20px;
+  color: #000000;
 }
 
-.management_content_list{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px 20px 30px 20px;
-    font-family: Roboto Slab;
-    font-weight: bold;
-
-    
+.management_content_list {
+  display: flex;
+  flex-direction: row;
+  font-family: Roboto Slab;
+  font-weight: bold;
+  padding-top: 25px;
+  padding-left: 10px;
 }
 
-.edit_btn{
-    background: #FFECC5;
-    border-radius: 80px;
-    border:0;
-    outline: 0;
-    width:45px;
-    height: 45px;
-    margin-top: -5px;
-    
-  
-
+.edit_btn {
+  background: #ffecc5;
+  border-radius: 80px;
+  border: 0;
+  outline: 0;
+  width: 45px;
+  height: 45px;
+  margin-top: -5px;
 }
 
-.trash_btn{
-    background: #C5E3FF;
-    border-radius: 80px;
-    border:0;
-    outline: 0;
-    width:45px;
-    height: 45px;
-    margin-top: -5px;
-    margin-left: 15px;
-    
+.trash_btn {
+  background: #c5e3ff;
+  border-radius: 80px;
+  border: 0;
+  outline: 0;
+  width: 45px;
+  height: 45px;
+  margin-top: -5px;
+  margin-left: 15px;
 }
 
+.deleted_petition {
+  float: right;
+  color: #303960;
+  font-family: Roboto Slab;
+  font-size: 19px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}

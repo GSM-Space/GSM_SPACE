@@ -1,12 +1,8 @@
-import React from 'react';
-import Writing from 'components/writing/Writing';
+import React from "react";
+import Writing from "components/writing/Writing";
 
 const WritingPage = () => {
-    return (
-       
-        <Writing/>
-        
-    );
-}
+  return <Writing />;
+};
 
 export default WritingPage;

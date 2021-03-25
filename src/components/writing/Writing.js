@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Writing.css";
-import Header from "../header/Header";
+import Header from "../Header/Header";
 import Warning from "assets/warning.png";
 import PopUpTemplate from "components/modal/PopUpTemplate.js";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import StudentMain from "./student/StudentMain";
-import Header from "../header/Header";
+import Header from "../Header/Header";
 import "./Main.css";
 
 const Main = () => {
