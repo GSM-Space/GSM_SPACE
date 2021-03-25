@@ -1,6 +1,6 @@
 import React from "react";
 import PetitionTemplate from "components/petition/PetitionTemplate";
-import Header from "components/header/Header";
+import Header from "components/Header/Header";
 import "./Petition.css";
 
 const PetitionPage = ({ match }) => {
@@ -13,4 +13,3 @@ const PetitionPage = ({ match }) => {
 };
 
 export default PetitionPage;
-
