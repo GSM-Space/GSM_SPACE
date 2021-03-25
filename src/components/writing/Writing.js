@@ -1,22 +1,27 @@
 import React, { useState } from "react";
 import "./Writing.css";
+import Header from "../header/Header";
 import Warning from "assets/warning.png";
-import PopUpTemplate from 'components/modal/PopUpTemplate.js';
-
-
+import PopUpTemplate from "components/modal/PopUpTemplate.js";
 
 const Writing = () => {
   const [PopUp, setPopUp] = useState(false);
 
-  const CheckPopUp = () =>{
-      setPopUp(!PopUp)
-  }
+  const CheckPopUp = () => {
+    setPopUp(!PopUp);
+  };
   return (
     <div>
+      <Header />
       <div className="write_board">
         <div className="petition--header">
           <span className="petition">청원하기</span>
-           <img src={Warning} alt="warning" className="mark" onClick={CheckPopUp} />
+          <img
+            src={Warning}
+            alt="warning"
+            className="mark"
+            onClick={CheckPopUp}
+          />
         </div>
         <hr className="line"></hr>
         <div className="petition_input">
@@ -31,7 +36,9 @@ const Writing = () => {
           <button className="writing_btn">작성완료</button>
         </div>
       </div>
-        {PopUp ? <PopUpTemplate toggle={CheckPopUp} currentState="warning"/>:null}
+      {PopUp ? (
+        <PopUpTemplate toggle={CheckPopUp} currentState="warning" />
+      ) : null}
     </div>
   );
 };

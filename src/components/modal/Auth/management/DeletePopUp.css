@@ -1,0 +1,22 @@
+.delete_petition_title{
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 25px;
+    color: #000000;
+}
+
+.delete_petition_btn{
+    
+    color: #ffffff;
+    background: #303960;
+    border-radius: 20px;
+    width:20%;
+    height: 65px;
+    outline: 0;
+    border: 0;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: bold;
+    margin-top: 70px;
+}
