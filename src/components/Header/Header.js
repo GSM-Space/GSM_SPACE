@@ -12,6 +12,7 @@ const Header = ({ isLogin }) => {
   const CheckPopUp = () => {
     setPopUp(!PopUp);
   };
+
   return (
     <>
       {isLogin ? (
