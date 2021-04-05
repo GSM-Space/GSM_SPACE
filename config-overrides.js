@@ -1,6 +1,6 @@
 const {
   addDecoratorsLegacy,
-  disableEsLint, // eslint를 끄는 것이 아니에요 ^^
+  disableEsLint,
   override,
 } = require("customize-cra");
 
