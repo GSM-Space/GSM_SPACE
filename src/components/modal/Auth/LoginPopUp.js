@@ -15,7 +15,8 @@ import { Link } from "react-router-dom";
 // };
 
 const responseSuccess = (res) => {
-  console.log(res);
+  console.log(res.tokenId);
+  sessionStorage.setItem("petitions-token", res.tokenId);
   // let jsonData = JSON.stringify(res);
   // saveAsFile(jsonData, "data.json");
 };
