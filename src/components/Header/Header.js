@@ -6,8 +6,10 @@ import Profile from "assets/svg/Profile.js";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
-const Header = ({ isLogin }) => {
+const Header = (props) => {
   const [PopUp, setPopUp] = useState(false);
+
+  const { isLogin, name, setName, email, setEmail, requestSocialLogin } = props;
 
   const CheckPopUp = () => {
     setPopUp(!PopUp);
@@ -43,7 +45,15 @@ const Header = ({ isLogin }) => {
         </div>
       )}
       {PopUp ? (
-        <PopUpTemplate toggle={CheckPopUp} currentState="logout" />
+        <PopUpTemplate
+          toggle={CheckPopUp}
+          currentState="logout"
+          name={name}
+          setName={setName}
+          email={email}
+          setEmail={setEmail}
+          requestSocialLogin={requestSocialLogin}
+        />
       ) : null}
     </>
   );
