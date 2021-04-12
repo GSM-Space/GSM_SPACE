@@ -4,6 +4,8 @@ import WarningPopUp from "./Auth/WarningPopUp";
 import "./PopUpTemplate.css";
 
 const PopUpTemplate = (props) => {
+  const { email, setEmail, name, setName, requestSocialLogin } = props;
+
   const ClosePopUp = () => {
     props.toggle();
   };
@@ -11,7 +13,16 @@ const PopUpTemplate = (props) => {
   const Modal = (current) => {
     switch (current) {
       case "logout":
-        return <LoginPopUp />;
+        return (
+          <LoginPopUp
+            isLogin={false}
+            email={email}
+            setEmail={setEmail}
+            name={name}
+            setName={setName}
+            requestSocialLogin={requestSocialLogin}
+          />
+        );
       case "warning":
         return <WarningPopUp />;
       default:

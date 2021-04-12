@@ -1,8 +1,8 @@
+import { AuthContainer } from "container";
 import React from "react";
-import Main from "components/main/Main";
 
 const MainPage = () => {
-  return <Main />;
+  return <AuthContainer />;
 };
 
 export default MainPage;

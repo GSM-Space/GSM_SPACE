@@ -15,17 +15,15 @@ import { Link } from "react-router-dom";
 // };
 
 const responseSuccess = (res) => {
-  console.log(res.tokenId);
   sessionStorage.setItem("petitions-token", res.tokenId);
-  // let jsonData = JSON.stringify(res);
-  // saveAsFile(jsonData, "data.json");
 };
 
 const responseFail = (err) => {
   console.error(err);
 };
 
-const LoginPopUp = () => {
+const LoginPopUp = (props) => {
+  const { email, setEmail, name, setName, requestSocialLogin } = props;
   return (
     <>
       <Logo className="popup-logo" />
@@ -44,14 +42,12 @@ const LoginPopUp = () => {
         className="Google-login"
         clientId="171117162418-7r68jqp88ifvrrkihodu48ur2lvjg1va.apps.googleusercontent.com"
         buttonText="Google 아이디로 로그인"
-        onSuccess={responseSuccess}
+        onSuccess={responseSuccess(email, setEmail, name, setName)}
         onFailure={responseFail}
       />
       <div className="modal_footer">
         <div className="forgot_password">비밀번호를 잊으셨나요 ?</div>
-        <Link to="/petition/ongoing" className="modal-login--button">
-          <div>로그인</div>
-        </Link>
+        <div onClick={() => requestSocialLogin()}>로그인</div>
       </div>
     </>
   );
