@@ -4,7 +4,7 @@ import Key from "assets/svg/Key.js";
 import Email from "assets/svg/Email.js";
 import GoogleLogin from "react-google-login";
 import "./LoginPopUp.css";
-import { Link } from "react-router-dom";
+import { getToken } from "util/Token";
 
 // const saveAsFile = (str, filename) => {
 //   var hiddenElement = document.createElement("a");
@@ -42,7 +42,7 @@ const LoginPopUp = (props) => {
         className="Google-login"
         clientId="171117162418-7r68jqp88ifvrrkihodu48ur2lvjg1va.apps.googleusercontent.com"
         buttonText="Google 아이디로 로그인"
-        onSuccess={responseSuccess(email, setEmail, name, setName)}
+        onSuccess={responseSuccess}
         onFailure={responseFail}
       />
       <div className="modal_footer">

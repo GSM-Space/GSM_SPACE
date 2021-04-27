@@ -5,7 +5,7 @@ export const getResponse = async (url, token) => {
   try {
     const data = await axios.get(`${baseUrl}${url}`, {
       headers: token && {
-        Authorization: `Bearer ${token}`,
+        Authorization: token,
       },
     });
     return data;
@@ -18,7 +18,7 @@ export const postRequest = async (url, request, token) => {
   try {
     const data = await axios.post(`${baseUrl}${url}`, request, {
       headers: token && {
-        Authorization: `Bearer ${token}`,
+        Authorization: token,
       },
     });
     return data;
@@ -31,7 +31,7 @@ export const modifyRequest = async (url, request, token) => {
   try {
     const data = await axios.put(`${baseUrl}${url}`, request, {
       headers: token && {
-        Authorization: `Bearer ${token}`,
+        Authorization: token,
       },
     });
     return data;
@@ -44,7 +44,7 @@ export const deleteRequest = async (url, token) => {
   try {
     const data = await axios.delete(`${baseUrl}${url}`, {
       headers: token && {
-        Authorization: `Bearer ${token}`,
+        Authorization: token,
       },
     });
     return data;

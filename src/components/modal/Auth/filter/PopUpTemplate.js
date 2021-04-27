@@ -3,6 +3,7 @@ import FilterPopUp from './FilterPopUp';
 import "./PopUpTemplate.css";
 
 const PopUpTemplate = (props) => {
+  
   const ClosePopUp = () => {
     props.toggle();
   };

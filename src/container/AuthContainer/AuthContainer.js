@@ -17,7 +17,8 @@ const AuthContainer = observer(({ history }) => {
         }
       })
       .catch((err) => {
-        console.log(err.response.data);
+        console.log("에러");
+        console.log(err);
       });
   }, [handleSocialLogin]);
 
