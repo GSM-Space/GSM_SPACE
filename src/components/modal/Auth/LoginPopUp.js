@@ -23,7 +23,7 @@ const responseFail = (err) => {
 };
 
 const LoginPopUp = (props) => {
-  const { email, setEmail, name, setName, requestSocialLogin } = props;
+  const { requestSocialLogin } = props;
   return (
     <>
       <Logo className="popup-logo" />
@@ -47,7 +47,12 @@ const LoginPopUp = (props) => {
       />
       <div className="modal_footer">
         <div className="forgot_password">비밀번호를 잊으셨나요 ?</div>
-        <div onClick={() => requestSocialLogin()}>로그인</div>
+        <div
+          className="modal-login--button"
+          onClick={() => requestSocialLogin()}
+        >
+          로그인
+        </div>
       </div>
     </>
   );

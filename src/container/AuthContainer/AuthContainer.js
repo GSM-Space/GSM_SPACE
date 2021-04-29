@@ -2,6 +2,7 @@ import Main from "components/main/Main";
 import { observer } from "mobx-react";
 import React, { useCallback, useState } from "react";
 import useStores from "util/hooks/useStores";
+import { withRouter } from "react-router-dom";
 
 const AuthContainer = observer(({ history }) => {
   const { store } = useStores();
@@ -14,13 +15,15 @@ const AuthContainer = observer(({ history }) => {
       .then((res) => {
         if (res.status === 200) {
           console.log(res.data);
+          alert("로그인 성공");
+          history.push("/petition/ongoing");
         }
       })
       .catch((err) => {
-        console.log("에러");
         console.log(err);
+        alert("구글 로그인을 해주세요.");
       });
-  }, [handleSocialLogin]);
+  }, [handleSocialLogin, history]);
 
   return (
     <Main
@@ -33,4 +36,4 @@ const AuthContainer = observer(({ history }) => {
   );
 });
 
-export default AuthContainer;
+export default withRouter(AuthContainer);
